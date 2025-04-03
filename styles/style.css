@@ -6,7 +6,7 @@
 
 .header {
     background-color: #9564AA;
-    width: 100%;
+    width: 320px;
     height: 50px;
 }
 
@@ -15,4 +15,24 @@
     height: 2px;
     background-color: #9564AA;
     opacity: 20%;
+}
+
+h3 {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.button-authethication {
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    width: 280px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    accent-color: #C56FFF;
+    width: 20px;
+    height: 20px;
 }
