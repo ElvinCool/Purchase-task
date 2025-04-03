@@ -6,17 +6,18 @@
 
 .header {
     background-color: #9564AA;
-    width: 320px;
     height: 50px;
 }
 .page {
     padding: 15px 20px;
 }
 .heading-line {
-    width: 14.58vw;
+    width: 280px;
     height: 2px;
     background-color: #9564AA;
     opacity: 20%;
+    margin-top: 10px;
+    margin-bottom: 23px;
 }
 
 h3 {
@@ -33,11 +34,52 @@ h3 {
     border-radius: 10px;
     background: #FFCF2D;
     border: none;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 input[type="checkbox"] {
     accent-color: #C56FFF;
-    width: 20px;
+    width: 30px;
     height: 20px;
     border: 1px solid #FFFFFF;
+}
+.privacy {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 15px;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.checkbox-discription-item {
+    color: #9564AA;
+}
+
+.main-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 13px;
+    margin-top: 32px;
+}
+
+.main-list-item {
+    text-decoration: none;
+    color: #9564AA;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.main-theme-list-item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
 }
