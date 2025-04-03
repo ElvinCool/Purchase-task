@@ -9,7 +9,9 @@
     width: 320px;
     height: 50px;
 }
-
+.page {
+    padding: 15px 20px;
+}
 .heading-line {
     width: 14.58vw;
     height: 2px;
@@ -29,10 +31,13 @@ h3 {
     width: 280px;
     height: 55px;
     border-radius: 10px;
+    background: #FFCF2D;
+    border: none;
 }
 
 input[type="checkbox"] {
     accent-color: #C56FFF;
     width: 20px;
     height: 20px;
+    border: 1px solid #FFFFFF;
 }
