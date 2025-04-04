@@ -137,3 +137,27 @@ input[type="checkbox"] {
 .price-item {
     margin-left: 28px;
 }
+
+@media (min-width: 375px){
+    .page{
+        padding: 15px 45px;
+    }
+    .card-text::after {
+        left:233px;
+    }
+    .card:hover::after{
+        left:45px;
+    }
+}
+
+@media (min-width: 425px){
+    .page{
+        padding: 15px 65px;
+    }
+    .card-text::after {
+        left:253px;
+    }
+    .card:hover::after{
+        left:65px;
+    }
+}
