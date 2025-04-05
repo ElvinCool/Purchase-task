@@ -23,6 +23,45 @@
 h3 {
     font-size: 20px;
 }
+
+.card-list .card-item {
+    width: 260px;
+    height: 50px;
+    border-radius: 10px;
+    background: #9564AA1A;
+    border: 2px solid #9564AA;
+    color: black;
+  }
+
+  .slider-wrapper {
+    width: 260px;
+    margin-left: 10px;
+  }
+
+  .card-text {
+    margin-left: 130px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  .swiper-button-prev{
+    display: none;
+  }
+  
+  .swiper-button-next{
+    display: none;
+  }
+  
+  .swiper {
+    width: 300px;
+    height: 70px;
+  }
+
+  .swiper-pagination{
+    color: #FFCF2D;
+  }
+
 .button-authethication {
     display: flex;
     flex-direction: column;
@@ -81,61 +120,6 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     column-gap: 10px;
-}
-
-.card {
-    background: #9564AA1A;
-    border: 2px solid #9564AA;
-    border-radius: 10px;
-    width: 260px;
-    height: 59px;
-    margin-left: 20px;
-    margin-bottom: 50px;
-    font-size: 23px;
-    font-weight: 700;
-}
-
-.card-text {
-    margin-left: 135px;
-    margin-top: 15px;
-}
-
-.card-text::after {
-    content: "CR"; 
-    width: 17px; 
-    height: 17px;
-    background-color: #F7CF4D; /* Цвет круга */
-    color: black;
-    font-weight: bold;
-    font-size: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%; 
-    position: absolute;
-    left: 208px; 
-    top: 145px;
-}
-
-.card:hover {
-    background-color: #9564AA;
-    color: white;
-}
-
-.card:hover::after {
-    content: 'One time offer!';
-    color:black;
-    background-color: #F7CF4D;
-    font-size: 14px;
-    border-radius: 5px;
-    padding: 3px 10px;
-    position: absolute;
-    left: 20px; 
-    top: 145px;
-}
-
-.price-item {
-    margin-left: 28px;
 }
 
 @media (min-width: 375px){
