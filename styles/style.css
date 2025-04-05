@@ -6,8 +6,12 @@
 
 .header {
     background-color: #9564AA;
-    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 17px 27px 15px 19px;
 }
+
 .page {
     padding: 15px 20px;
 }
@@ -17,11 +21,15 @@
     background-color: #9564AA;
     opacity: 20%;
     margin-top: 10px;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
 }
 
 h3 {
     font-size: 20px;
+}
+
+.container {
+    padding-block: 1rem;
 }
 
 .card-list .card-item {
@@ -39,12 +47,25 @@ h3 {
   }
 
   .card-text {
-    margin-left: 130px;
+    margin-left: 140px;
     margin-top: 10px;
     font-weight: 700;
     font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
   }
-  
+
+  .card-text-item {
+    width: 12px;
+    height: 9px;
+    padding: 4px 3px;
+    border-radius: 20px;
+    background-color: #FFCF2D;
+    font-size: 8px;
+  }
+
   .swiper-button-prev{
     display: none;
   }
@@ -58,14 +79,16 @@ h3 {
     height: 70px;
   }
 
-  .swiper-pagination{
-    color: #FFCF2D;
+  .swiper-pagination-bullet {
+    background-color: #FFCF2D;
+    opacity: 1;
   }
 
 .button-authethication {
     display: flex;
     flex-direction: column;
 }
+
 .button {
     width: 280px;
     height: 55px;
@@ -74,6 +97,7 @@ h3 {
     border: none;
     font-weight: 700;
     font-size: 16px;
+    margin-top: 20px;
 }
 
 input[type="checkbox"] {
@@ -82,6 +106,7 @@ input[type="checkbox"] {
     height: 20px;
     border: 1px solid #FFFFFF;
 }
+
 .privacy {
     display: flex;
     column-gap: 10px;
@@ -96,10 +121,11 @@ input[type="checkbox"] {
 
 .main-list {
     column-gap: 13px;
-    margin-top: 32px;
+    margin-top: 30px;
 }
 .main-list-img {
     margin-left: 97px;
+    margin-bottom: 10px;
 }
 
 .main-list-item {
