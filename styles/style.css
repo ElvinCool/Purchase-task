@@ -3,7 +3,9 @@
   padding: 0px;
   font-family: "Ubuntu", sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
 ul {
   list-style: none;
 }
@@ -100,7 +102,7 @@ header nav {
   margin-bottom: 10px;
 }
 
-h3 {
+.main-text {
   font-size: 20px;
 }
 
@@ -143,24 +145,25 @@ h3 {
   color: black;
 }
 
-.card-item:hover {
-    background: #9564AA;
-    color: white;
+.card-item.hovered-by-button {
+  background: #9564aa;
+  color: white;
 }
 
-.card-item:hover::after {
-    content: 'One time offer!';
-    color: black;
-    background-color: #ffcf2d;
-    position: absolute;
-    top: 15px;
-    right: 153px;
-    width: 103px;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 5px;
+.card-item.hovered-by-button::after {
+  content: "One time offer!";
+  color: black;
+  background-color: #ffcf2d;
+  position: absolute;
+  top: 15px;
+  right: 147px;
+  width: 103px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 5px;
 }
+
 .swiper-button-prev {
   display: none;
 }
@@ -177,7 +180,6 @@ h3 {
 .swiper-pagination-bullet {
   background-color: #ffcf2d;
   opacity: 1;
-  z-index: -1;
 }
 
 .button-authethication {
@@ -194,6 +196,8 @@ h3 {
   font-weight: 700;
   font-size: 16px;
   margin-top: 20px;
+  color: black;
+  cursor: pointer;
 }
 
 input[type="checkbox"] {
@@ -244,6 +248,17 @@ input[type="checkbox"] {
   column-gap: 10px;
 }
 
+.mobile-header {
+  display: flex;
+  column-gap: 226px;
+}
+.desktop-header {
+  display: none;
+}
+
+.user {
+  display: none;
+}
 @media (min-width: 375px) {
   .page {
     padding: 15px 45px;
@@ -253,6 +268,10 @@ input[type="checkbox"] {
   }
   .card:hover::after {
     left: 45px;
+  }
+
+  .mobile-header {
+    column-gap: 276px;
   }
 }
 
@@ -265,5 +284,135 @@ input[type="checkbox"] {
   }
   .card:hover::after {
     left: 65px;
+  }
+  .mobile-header {
+    column-gap: 326px;
+  }
+}
+
+@media (width >=768px) {
+  .heading-line {
+    width: 100%;
+  }
+
+  .page {
+    display: flex;
+    padding: 15px 25px;
+    column-gap: 30px;
+    justify-self: center;
+  }
+  .header svg {
+    padding-top: 0px;
+  }
+
+  .user {
+    display: block;
+    width: 270px;
+    background: #9564aa1a;
+    height: 100vh;
+    border-radius: 10px;
+    border: 2px solid #9564aa33;
+    padding: 18px 18px;
+  }
+  .user-id {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .user-name {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .user-premium {
+    text-transform: uppercase;
+    color: white;
+    background: #684677;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .user-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 12px;
+    margin-top: 21px;
+    gap: 25px;
+  }
+  .user-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.56vw;
+  }
+
+  .user-list-item a {
+    color: black;
+  }
+
+  .desktop-header {
+    display: flex;
+    flex-direction: row;
+    height: 5.21vw;
+    background: #9564aa;
+    width: 100%;
+    column-gap: 25.78vw;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  .desktop-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.08vw;
+    align-items: center;
+  }
+  .logo {
+    font-size: 2.5vw;
+  }
+  .desktop-list-items {
+    display: flex;
+    white-space: nowrap;
+    column-gap: 2.08vw;
+    font-weight: 700;
+    font-size: 1vw;
+  }
+
+  .premium {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: #ffcf2d;
+    background: #684677;
+    padding: 6px 13px;
+    border-radius: 10px;
+    column-gap: 10px;
+    font-weight: 700;
+    font-size: 1vw;
+  }
+  .main-text {
+    text-shadow: 2px 2px #00000040;
+  }
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header {
+    margin-left: 19.69vw;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .swiper-pagination-bullet {
+    display: none;
+  }
+
+  .swiper {
+    display: none;
   }
 }
