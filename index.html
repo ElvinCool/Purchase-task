@@ -113,8 +113,13 @@
           </ul>
       </section>
       <section class="main">
-      <h3>Закончились кредиты?</h3>
+      <h3 class="main-text">Закончились кредиты?</h3>
       <div class="heading-line"></div>
+      <div class="discount-banner">
+        <span class="discount-text"><strong>Скидка 40%</strong></span>
+        <span class="offer-text">Предложение действует в течение:</span>
+        <div class="timer" id="timer">10 : 00</div>
+      </div>
       <div class="container swiper">
         <div class="slider-wrapper">
            <div class="card-list swiper-wrapper">
@@ -151,6 +156,44 @@
         </div>
 
      </div>
+     <section class="cards">
+      <div class="card-item special-offer">
+        <div class="card-text">
+         <p>50<div class="card-text-item">CR</div></p>
+         </div>
+         <button class="card-button" type="button">Buy now</button>
+     </div>
+     <div class="card-item special-offer">
+      <div class="card-text">
+       <p>150<div class="card-text-item">CR</div></p>
+       </div>
+       <button class="card-button" type="button">Buy now</button>
+   </div>
+   <div class="card-item special-offer">
+    <div class="card-text">
+     <p>300<div class="card-text-item">CR</div></p>
+     </div>
+     <button class="card-button" type="button">Buy now</button>
+ </div>
+ <div class="card-item special-offer">
+  <div class="card-text">
+   <p>500<div class="card-text-item">CR</div></p>
+   </div>
+   <button class="card-button" type="button">Buy now</button>
+</div>
+<div class="card-item special-offer">
+  <div class="card-text">
+   <p>1000<div class="card-text-item">CR</div></p>
+   </div>
+   <button class="card-button" type="button">Buy now</button>
+</div>
+<div class="card-item special-offer">
+  <div class="card-text">
+   <p>1000<div class="card-text-item">CR</div></p>
+   </div>
+   <button class="card-button" type="button">Buy now</button>
+</div>
+     </section>
       <div class="button-authethication">
         <button class="button" type="button">Try now</button>
         <form class="privacy">
@@ -178,7 +221,7 @@
           />
         </svg>
         <ul class="items">
-          <li>
+          <li class="top-center">
             <div class="main-theme-list-item">
               <svg
                 width="30"
@@ -194,10 +237,10 @@
                   d="M11 21.5362L15.0578 19H20.3333C21.0697 19 21.6666 18.4031 21.6666 17.6667V9.66671C21.6666 8.93033 21.0697 8.33337 20.3333 8.33337H9.66665C8.93027 8.33337 8.33331 8.93033 8.33331 9.66671V17.6667C8.33331 18.4031 8.93027 19 9.66665 19H11V21.5362ZM14.6754 17.6667L12.3333 19.1305V17.6667H9.66665V9.66671H20.3333V17.6667H14.6754ZM11.6666 15.6667V14.3334H16.3333V15.6667H11.6666ZM11.6666 11.6667V13H17.6666V11.6667H11.6666Z"
                   fill="#9564AA"
                 /></svg
-              ><a class="main-list-item" href="">Отправлять сообщения</a>
+              ><a class="main-list-item" href="">Отправлять <br class="visual-hidden"/>сообщения</a>
             </div>
           </li>
-          <li>
+          <li class="top-right">
             <div class="main-theme-list-item">
               <svg
                 width="30"
@@ -214,10 +257,10 @@
                   fill="#9564AA"
                 />
               </svg>
-              <a class="main-list-item" href="">Просматривать скрытые фото</a>
+              <a class="main-list-item" href="">Просматривать <br class="visual-hidden"/>скрытые фото</a>
             </div>
           </li>
-          <li>
+          <li class="right">
             <div class="main-theme-list-item">
               <svg
                 width="30"
@@ -234,10 +277,10 @@
                   fill="#9564AA"
                 />
               </svg>
-              <a class="main-list-item" href="">Оплачивать подарки</a>
+              <a class="main-list-item" href="">Оплачивать<br class="visual-hidden"/> подарки</a>
             </div>
           </li>
-          <li>
+          <li class="bottom-right">
             <div class="main-theme-list-item">
               <svg
                 width="30"
@@ -255,7 +298,47 @@
                 />
               </svg>
               <a class="main-list-item" href=""
-                >Пользоваться другими премиум функциями</a
+                >Пользоваться <br class="visual-hidden"/>другими премиум <br class="visual-hidden"/>функциями</a
+              >
+            </div>
+          </li>
+          <li class="bottom-left">
+            <div class="main-theme-list-item">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle opacity="0.1" cx="15" cy="15" r="15" fill="#9564AA" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11 21.5362L15.0578 19H20.3333C21.0697 19 21.6666 18.4031 21.6666 17.6667V9.66671C21.6666 8.93033 21.0697 8.33337 20.3333 8.33337H9.66665C8.93027 8.33337 8.33331 8.93033 8.33331 9.66671V17.6667C8.33331 18.4031 8.93027 19 9.66665 19H11V21.5362ZM14.6754 17.6667L12.3333 19.1305V17.6667H9.66665V9.66671H20.3333V17.6667H14.6754ZM11.6666 15.6667V14.3334H16.3333V15.6667H11.6666ZM11.6666 11.6667V13H17.6666V11.6667H11.6666Z"
+                  fill="#9564AA"
+                /></svg
+              >             
+              <a class="main-list-item" href=""
+                >Просматривать <br class="visual-hidden"/>скрытые фото</a
+              >
+            </div>
+          </li>
+          <li class="bottom-right-right">
+            <div class="main-theme-list-item">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle opacity="0.1" cx="15" cy="15" r="15" fill="#9564AA" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11 15C8.79086 15 7 13.2091 7 11C7 8.79086 8.79086 7 11 7C13.2091 7 15 8.79086 15 11C15 13.2091 13.2091 15 11 15ZM13 11C13 12.1046 12.1046 13 11 13C9.89543 13 9 12.1046 9 11C9 9.89543 9.89543 9 11 9C12.1046 9 13 9.89543 13 11Z" fill="#9564AA"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6562 19.897L19.8733 17.6798L19.0925 14.843L19.4327 14.0305L22 12.5818V9.44645L19.44 7.99173L19.1055 7.18067L19.8961 4.34235L17.6774 2.12683L14.8403 2.90748L14.0296 2.56758L12.5808 0H9.44544L7.99072 2.56004L7.17985 2.89446L4.34198 2.10281L2.1267 4.31809L2.90748 7.15567L2.56758 7.96634L0 9.41514V12.5496L2.55774 14.0076L2.89252 14.8193L2.10197 17.6572L4.31809 19.8733L7.15567 19.0925L7.96644 19.4325L9.41527 21.999H12.5498L14.0067 19.4412L14.8183 19.1065L17.6562 19.897ZM17.8527 12.6256L16.9809 14.7078L17.6362 17.0886L17.0678 17.657L14.692 16.9951L12.609 17.8542L11.3873 19.999H10.5829L9.37141 17.8529L7.29155 16.9808L4.90947 17.6362L4.34203 17.0688L5.00385 14.693L4.14482 12.6101L2 11.3876V10.583L4.1471 9.3715L5.0192 7.29155L4.36375 4.90947L4.93001 4.34321L7.30576 5.00595L9.38955 4.14655L10.6093 2H11.4129L12.6245 4.1471L14.7044 5.0192L17.087 4.36362L17.6558 4.93166L16.9941 7.30696L17.8534 9.39056L20 10.6103V11.4139L17.8527 12.6256Z" fill="#9564AA"/>
+                  </svg>             
+              <a class="main-list-item" href=""
+                >Просматривать <br class="visual-hidden"/>скрытые фото</a
               >
             </div>
           </li>
