@@ -314,6 +314,14 @@ input[type="checkbox"] {
   display: none;
 }
 
+.parallax-container {
+  display: none;
+}
+
+.parallax-layer {
+  display: none;
+}
+
 @media (min-width: 375px) {
   .page {
     padding: 15px 45px;
@@ -679,13 +687,7 @@ input[type="checkbox"] {
     min-width: 100px;
     text-align: center;
   }
-  .parallax-container {
-    display: none;
-  }
-  
-  .parallax-layer {
-    display: none;
-  }
+
 }
 
 @media (width >= 1024px){
