@@ -32,8 +32,8 @@
           <h1 class="logo">Logo</h1>
           <div class="desktop-list">
             <ul class="desktop-list-items">
-            <li><a>People nearby</a></li>
-            <li><a>Search</a></li>
+            <li><a href="#">People nearby</a></li>
+            <li><a href="#">Search</a></li>
           </ul>
           <div class="premium">
             <p>Premium</p>
@@ -45,6 +45,10 @@
         </section>           
     </header>
     <main class="page">
+      <div class="parallax-container">
+        <img src="./images/balls.png" alt="balls" class="parallax-layer" />
+        <img src="./images/balls2.png" alt="balls" class="parallax-layer layer1" />
+      </div>
       <section class ="user">
         <div class="user-id">
           <img src="./images/Ellipse 5.png">
@@ -197,11 +201,12 @@
       <div class="button-authethication">
         <button class="button" type="button">Try now</button>
         <form class="privacy">
-          <input type="checkbox" class="checkbox-input" />
-          <label>
-            By clicking Checkbox you agree and accept our
+          <label class="checkbox-container">
+            <input type="checkbox" class="checkbox-input" />
+            <span class="custom-checkmark"></span>
+            <p>By clicking Checkbox you agree and accept our
             <span class="checkbox-discription-item">Privacy Policy</span>, and
-            <span class="checkbox-discription-item">Terms of use</span>
+            <span class="checkbox-discription-item">Terms of use</span></p>
           </label>
         </form>
       </div>
